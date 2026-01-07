@@ -1,0 +1,59 @@
+.NoteEditor {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.Field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.Label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #475569;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.Input,
+.Textarea {
+  font: inherit;
+  color: var(--text);
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 12px;
+  outline: none;
+}
+
+.Input:focus,
+.Textarea:focus {
+  border-color: rgba(59, 130, 246, 0.55);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+.Textarea {
+  resize: vertical;
+  min-height: 160px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.EditorActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+.HintError {
+  color: var(--error);
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+}
